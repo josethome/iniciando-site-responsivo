@@ -1,0 +1,21 @@
+{
+  "name": "Html",
+  "homepage": "https://github.com/josethome/iniciando-site-responsivo",
+  "authors": [
+    "Jose Thome <josethome.band@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}
