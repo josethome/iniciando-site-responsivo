@@ -5,7 +5,7 @@ var sass = require('gulp-sass');
 
 gulp.task('sass', gulp.series( function() {
     return gulp.src('sass/**/*.sass')
-    // converter o Sass em CSS    
+    // Converter o Sass em CSS    
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError)) 
     .pipe(gulp.dest('css'));
 }));
