@@ -4,11 +4,11 @@
 	<meta charset="UTF-8">
 	<title>Web site - Criando um site responsivo</title>
 </head>
-<body>
+<body>	
 
 	<!-- FERRAMENTA LIVE RELOAD - EXECUTAR EM MODO DESENVOLVIMENTO -->
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-	</script>	
+	</script>
 	
 	<!-- Required meta tags -->
     <meta charset="utf-8">
@@ -18,7 +18,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="css/plugins.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <link rel="stylesheet" href="font-awesome/css/fontawesome.css">
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">	
 
 </head>
@@ -52,7 +53,7 @@
 				</ul>
 			</div>
 
-			<h2><strong>José</strong> A. <strong>Thomé</strong></h2>
+			<h2><strong>Quem</strong> sou <strong>Eu</strong></h2>
 			<p class="lead">Portfólio Web Designer</p>
 		</div>
 	</header> 
@@ -60,36 +61,42 @@
 	<main>
 		<section class="sobre">
 			<div class="container">			
-				<div class="itens">
-					<div class="foto">
-						<img src="images/foto-portfolio.png" alt="foto-developer">	
-					</div>
-					
-					<div class="icone-lapis">
-						<i class="fa fa-pencil-alt"></i>
-					</div>	
-
-					<div class="icone-codigo">
-						<i class="fa fa-code"></i>
-					</div>
-
-					<div class="icone-motivacao">
-						<i class="fa fa-heart"></i>
-					</div>
-
-					<div class="icone-compartilhar">
-						<i class="fa fa-share-alt"></i>
-					</div>
-				</div>
-
+				
 				<div class="textos">
 					<p><strong>Lorem ipsum dolor sit amet </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptas officia beatae soluta repellendus eaque voluptate dolorem cupiditate iste a atque laborum corrupti nostrum magni placeat quis asperiores ut optio veniam, quasi quos quam, quo saepe necessitatibus iusto! Doloremque nisi odio in similique eveniet odit hic non, beatae saepe. Est, nisi. Eveniet animi cupiditate dignissimos impedit, sapiente deleniti doloremque eaque est veritatis. Voluptates iusto, illo cupiditate! Eligendi natus expedita fugiat aperiam, doloremque suscipit cupiditate consectetur, et, consequatur ipsam culpa vero!
-					</p>				
-
-					<a class="botao medio btn btn-primary btn-lg" href="#"><i class="fa fa-book-reader"></i>
-						Leia mais ...
-					</a>
+					</p> 					
 				</div>
+
+				<ul class="habilidades">
+					<li class="habilidade-8">
+						<h2>
+							<i class="fa fa-info-html5"></i><strong>HTML5</strong> // 80%
+							<div class="barra"><span></span></div>
+						</h2>
+					</li>
+					<li class="habilidade-5">
+						<h2>
+							<i class="fa fa-info-css3"></i><strong>CSS3</strong> // 50%
+							<div class="barra"><span></span></div>
+						</h2>
+					</li>
+					<li class="habilidade-7">
+						<h2>
+							<i class="fa fa-info-wordpress"></i><strong>Wordpress</strong> // 70%
+							<div class="barra"><span></span></div>
+						</h2>
+					</li>
+					<li class="habilidade-3">
+						<h2>
+							<i class="fa fa-info-git"></i><strong>GIT</strong> // 30%
+							<div class="barra"><span></span></div>
+						</h2>
+					</li>
+				</ul>
+
+				<a class="botao medio btn btn-primary btn-lg" href="#"><i class="fa fa-picture-o"></i>
+						Acessar Portfólio
+				</a>
 			</div>
 		</section>
 	</main>
