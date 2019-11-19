@@ -3,45 +3,15 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 
-gulp.task('sass', gulp.series( function() {
-<<<<<<< HEAD
-    return gulp.src('sass/*.sass')
-    // converter o Sass em CSS
-=======
+gulp.task('sass', gulp.series( function() {    
     return gulp.src('sass/**/*.sass')
-    // converter o Sass em CSS    
->>>>>>> html
+    // Converter o Sass em CSS
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError)) 
     .pipe(gulp.dest('css'));
 }));
 
 gulp.task('watch', gulp.series( function() {
-<<<<<<< HEAD
     gulp.watch('sass/*.sass', gulp.parallel( ['sass'] ));
 }));
 
 gulp.task('default', gulp.series( ['sass', 'watch'] ));
-
-
-
-// CÓDIGO FUNCIONANDO => BEM DE BOA
-// var gulp = require('gulp');
-// var sass = require('gulp-sass');
-
-// gulp.task('sass', gulp.series( function() {
-//     return gulp.src('sass/*.sass')
-//     .pipe(sass()) // converter o Sass em CSS
-//     .pipe(gulp.dest('css'));
-// }));
-
-// gulp.task('watch', gulp.series( function() {
-//     gulp.watch('sass/*.sass', gulp.parallel( ['sass'] ));
-// }));
-
-// gulp.task('default', gulp.series( ['sass', 'watch'] ));
-=======
-    gulp.watch('sass/**/*.sass', gulp.parallel( ['sass'] ));
-}));
-
-gulp.task('default', gulp.series( ['sass', 'watch'] ));
->>>>>>> html
