@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Web site - Criando um site responsivo</title>
 </head>
-<body>
+<body>	
 
 	<!-- FERRAMENTA LIVE RELOAD - EXECUTAR EM MODO DESENVOLVIMENTO -->
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
@@ -18,8 +18,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/geral.css">
     <link rel="stylesheet" href="css/plugins.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/contato.css"> 
+    <link rel="stylesheet" href="bower_components/font-awesome/css/fontawesome.css"> 
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">       
 </head>
 <body>
 	<header>
@@ -51,45 +52,72 @@
 				</ul>
 			</div>
 
-			<h2><strong>José</strong> A. <strong>Thomé</strong></h2>
+			<h2>Fale<strong> Comigo</strong></h2>
 			<p class="lead">Portfólio Web Designer</p>
 		</div>
 	</header> 
 
 	<main>
-		<section class="sobre">
-			<div class="container">			
-				<div class="itens">
-					<div class="foto">
-						<img src="images/foto-portfolio.png" alt="foto-developer">	
+		<section class="contato">
+			<div class="container">
+				<form>
+					<div class="cols">
+						<div class="col">
+							<div class="form-group">
+								<input type="text" placeholder="Nome Completo" required>	
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="form-group">
+								<input type="email" placeholder="E-mail">
+							</div>
+						</div>
+						
+						<div class="col">
+							<div class="form-group">
+								<input type="number" placeholder="Ex.: (44) 3333-3333">
+							</div>
+						</div>
+						
+						<div class="col">
+							<div class="form-group">
+								<select>
+									<option>Selecione uma opção</option>
+									<option value="">Orçamento</option>
+									<option value="">Suporte Técnico</option>
+									<option value="">Outras Informações</option>	
+								</select>
+							</div>
+						</div>
 					</div>
-					
-					<div class="icone-lapis">
-						<i class="fa fa-pencil-alt"></i>
-					</div>	
 
-					<div class="icone-codigo">
-						<i class="fa fa-code"></i>
+					<div class="form-group">
+						<textarea name="" id="" cols="30" rows="10" placeholder="Sua mensagem ..."> 					
+						</textarea>
 					</div>
 
-					<div class="icone-motivacao">
-						<i class="fa fa-heart"></i>
+					<div class="form-group">
+						<button class="botao medio btn btn-primary btn-lg"><i class="fa fa-paper-plane"></i> Enviar Mensagem</button>
 					</div>
 
-					<div class="icone-compartilhar">
-						<i class="fa fa-share-alt"></i>
-					</div>
-				</div>
+					<div class="form-group">
+						<p class="btn-success"><i class="fa fa-info-circle"></i>
+							Seu contato foi enviado com sucesso.
+						</p>
+						<p class="btn-danger"><i class="fa fa-info-circle"></i>
+							Preencha todos os campos obrigatórios.
+						</p>
+					</div>					
 
-				<div class="textos">
-					<p><strong>Lorem ipsum dolor sit amet </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptas officia beatae soluta repellendus eaque voluptate dolorem cupiditate iste a atque laborum corrupti nostrum magni placeat quis asperiores ut optio veniam, quasi quos quam, quo saepe necessitatibus iusto! Doloremque nisi odio in similique eveniet odit hic non, beatae saepe. Est, nisi. Eveniet animi cupiditate dignissimos impedit, sapiente deleniti doloremque eaque est veritatis. Voluptates iusto, illo cupiditate! Eligendi natus expedita fugiat aperiam, doloremque suscipit cupiditate consectetur, et, consequatur ipsam culpa vero!
-					</p>				
-
-					<a class="botao medio btn btn-primary btn-lg" href="#"><i class="fa fa-book"></i>
-						Leia mais ...
-					</a>
-				</div>
-			</div>
+					<div class="fale-comigo text-center">
+						<h4>
+							<i class="fa fa-phone"></i> (41) 99125-1316
+							<i class="fa fa-envelope"></i>  josethome.band@gmail.com
+						</h4>					
+					</div> 						
+				</form>				
+			</div>			
 		</section>
 	</main>
 
