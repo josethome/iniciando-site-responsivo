@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Web site - Criando um site responsivo</title>
+</head>
+<body>	
+
+	<!-- FERRAMENTA LIVE RELOAD - EXECUTAR EM MODO DESENVOLVIMENTO -->
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+	</script>
+	
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Portfólio - Site responsivo e designer moderno</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/contato.css"> 
+    <link rel="stylesheet" href="bower_components/font-awesome/css/fontawesome.css"> 
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/2.0.0/css/imagehover.min.css"> -->    
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="index.html">				
+					<img src="images/logo-topo.svg" alt="Logotipo portfólio">
+				</a>
+			</div>
+
+			<div class="links">
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="sobre.html">Sobre</a></li>
+						<li><a href="servicos.html">Serviços</a></li>
+						<li><a href="portfolio.html">Portfólio</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+
+				<ul class="social">			
+					<li>				
+						<a href="#"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li>				
+						<a href="#"><i class="fab fa-github-alt"></i></a>
+					</li>
+				</ul>
+			</div>
+
+			<h2>Fale<strong> Comigo</strong></h2>
+			<p class="lead">Portfólio Web Designer</p>
+		</div>
+	</header> 
+
+	<main>
+		<section class="contato">
+			<div class="container">
+				<form>
+					<div class="cols">
+						<div class="col">
+							<div class="form-group">
+								<input type="text" placeholder="Nome" required>	
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="form-group">
+								<input type="email" placeholder="E-mail">
+							</div>
+						</div>
+						
+						<div class="col">
+							<div class="form-group">
+								<input type="number" placeholder="Ex.: (44) 3333-3333">
+							</div>
+						</div>
+						
+						<div class="col">
+							<div class="form-group">
+								<select>
+									<option>Selecione uma opção</option>
+									<option value="">Orçamento</option>
+									<option value="">Suporte Técnico</option>
+									<option value="">Outras Informações</option>	
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<textarea name="" id="" cols="30" rows="10" placeholder="Sua mensagem ..."> 					
+						</textarea>
+					</div>
+
+					<div class="form-group">
+						<button class="botao medio btn btn-primary btn-lg"><i class="fa fa-paper-plane"></i> Enviar Mensagem</button>
+					</div>
+
+					<div class="form-group">
+						<p class="btn-success"><i class="fa fa-info-circle"></i>
+							Seu contato foi enviado com sucesso.
+						</p>
+						<p class="btn-danger"><i class="fa fa-info-circle"></i>
+							Preencha todos os campos obrigatórios.
+						</p>
+					</div>					
+
+					<div class="fale-comigo text-center">
+						<h4>
+							<i class="fa fa-phone"></i> (41) 99125-1316
+							<i class="fa fa-envelope"></i>  josethome.band@gmail.com
+						</h4>					
+					</div> 						
+				</form>				
+			</div>			
+		</section>
+	</main>
+
+	<footer>
+		<div class="logo-rodape">
+			<a href="index.html">
+				<img src="images/logo-rodape.svg" alt="Logotipo portfólio rodapé">
+			</a>
+			
+			<p>Horário de atendimento: segunda a sexta-feira <strong>das</strong> 9:00h 
+				<strong>as</strong> 18:00h
+			</p>
+			
+			<p>Copyright&nbsp;&copy;&nbsp;2019 Portfólio. Criado por José A. Thomé - Todos os direitos reservados.</p>
+		</div>
+	</footer>
+</body>
+</html>
